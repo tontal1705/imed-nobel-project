@@ -1,38 +1,102 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Ysabeau+Infant:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap");
+body {
+  font-family: "Playfair Display", serif;
+  font-family: "Ysabeau Infant", sans-serif;
+  font-family: "Kanit", sans-serif;
+}
+
+/*---------Header---------*/
+.Head_Nobel {
   text-align: center;
+  height: 100px;
+  background-color: orange;
+  font-size: 50px;
+  color: #000;
+  border: 10px solid white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*---------Details---------*/
+.Details_Nobel {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 830px;
+  border: 10px solid white;
 }
 
-.App-link {
-  color: #61dafb;
+/*---------Filter---------*/
+.Details_Filters {
+  text-align: -webkit-center;
+  padding-top: 100px;
+  width: 50%;
+  background-color: orange;
+  border-right: 10px solid white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.select_AD {
+  width: 50%;
+  margin-bottom: 20px;
 }
+
+.Button_Apply {
+  background-color: navy;
+}
+
+/*---------Details Nobel Prize---------*/
+.Details_Nobel_Prize {
+  width: 50%;
+  background-color: orange;
+  border-left: 10px solid white;
+}
+.Details_Nobel_Prize p {
+  padding: 3%;
+  font-size: 20px;
+  text-align: start;
+ 
+}
+
+@media only screen and (max-width: 700px) {
+  body{
+    background-color: orange;
+  }
+  .Head_Nobel {
+    font-size: 40px;
+    border: 0px solid orange;
+  }
+  
+  /*---------Details---------*/
+  .Details_Nobel {
+    display: block;
+    height: 830px;
+    border: 0px solid orange;
+  }
+  
+  /*---------Filter---------*/
+  .Details_Filters {
+    padding-top: 50px;
+    width: 100%;
+    border-right: 0px solid white;
+  }
+  
+  .select_AD {
+    width: 50%;
+  }
+  
+  .Button_Apply {
+    background-color: navy;
+  }
+  
+  /*---------Details Nobel Prize---------*/
+  .Details_Nobel_Prize {
+    margin-top: -2px;
+    width: 100%;
+    border-left: 0px solid white;
+  }
+  .Details_Nobel_Prize p {
+    padding: 5%;
+    font-size: 18px;
+  
+   
+  }
+ 
+}
+
