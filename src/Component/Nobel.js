@@ -1,8 +1,5 @@
-import React from "react";
-import Form from 'react-bootstrap/Form';
+import {Form,Button} from 'react-bootstrap';
 import { useEffect, useState } from 'react';
-import Button from 'react-bootstrap/Button';
-
 export default function Nobel() {
     const [isLoading, setLoading] = useState(false);
 
@@ -21,14 +18,14 @@ export default function Nobel() {
   const handleClick = () => setLoading(true);
 
   return (
-    <div>
+    <div className='Nobel'>
      <div className="Head_Nobel">
      Nobel Prize
      </div>
       
       <div className="Details_Nobel">
         <div className="Details_Filters">
-        <Form.Select aria-label="โปรดเลือก ค.ศ." className="select_AD">
+        <Form.Select id='select' aria-label="โปรดเลือก ค.ศ." className="select_AD">
       <option>โปรดเลือก ค.ศ.</option>
       <option value="1901">1901</option>
       <option value="1902">1902</option>

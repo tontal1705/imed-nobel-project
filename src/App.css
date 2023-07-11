@@ -1,26 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Ysabeau+Infant:wght@800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap");
+
 body {
   font-family: "Playfair Display", serif;
   font-family: "Ysabeau Infant", sans-serif;
   font-family: "Kanit", sans-serif;
+  background-color: #01A6BA;
+  padding: 20px;
 }
 
 /*---------Header---------*/
 .Head_Nobel {
   text-align: center;
   height: 100px;
-  background-color: orange;
   font-size: 50px;
-  color: #000;
-  border: 10px solid white;
+  color:  rgb(0, 0, 95);
+
+
+  background: #01A6BA;
+
+  align-items: center;
+  background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+   -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+
+
+
 }
 
 /*---------Details---------*/
 .Details_Nobel {
   display: flex;
   height: 830px;
-  border: 10px solid white;
+  padding-top: 20px;
 }
 
 /*---------Filter---------*/
@@ -28,8 +41,14 @@ body {
   text-align: -webkit-center;
   padding-top: 100px;
   width: 50%;
-  background-color: orange;
-  border-right: 10px solid white;
+  background-color: #01A6BA;
+  border-left: 10px solid #01A6BA;
+  border-right: 10px solid #01A6BA;
+  align-items: center;
+  background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+   -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
 }
 
 .select_AD {
@@ -41,62 +60,102 @@ body {
   background-color: navy;
 }
 
+.Button_Apply:hover {
+  color: white;
+  background-color: rgb(0, 52, 163);
+  border: 2px solid white;
+
+}
+
 /*---------Details Nobel Prize---------*/
 .Details_Nobel_Prize {
   width: 50%;
-  background-color: orange;
-  border-left: 10px solid white;
+  background-color: #01A6BA;
+  border-left: 10px solid #01A6BA;
+  border-right: 10px solid #01A6BA;
+  align-items: center;
+  background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+   -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
 }
+
 .Details_Nobel_Prize p {
   padding: 3%;
   font-size: 20px;
   text-align: start;
- 
+  color: rgb(0, 0, 95);
+
 }
 
 @media only screen and (max-width: 700px) {
-  body{
-    background-color: orange;
+  body {
+    background-color: #01A6BA;
+    
   }
+.Nobel{
+  background-color: #01A6BA;
+  border-left: 10px solid #01A6BA;
+  border-right: 10px solid #01A6BA;
+  align-items: center;
+  background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+   -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+}
   .Head_Nobel {
     font-size: 40px;
-    border: 0px solid orange;
+    border: 0px solid #01A6BA;
+    align-items: center;
+    background: none;
+    box-shadow: none;
+    border-radius: 0px
   }
-  
+
   /*---------Details---------*/
   .Details_Nobel {
     display: block;
     height: 830px;
-    border: 0px solid orange;
+    border: 0px solid #01A6BA;
   }
-  
+
   /*---------Filter---------*/
   .Details_Filters {
     padding-top: 50px;
     width: 100%;
-    border-right: 0px solid white;
+    border-right: 0px solid #01A6BA;
+    border: 0px solid #01A6BA;
+    align-items: center;
+    background: none;
+    box-shadow: none;
+    border-radius: 0px
   }
-  
+
   .select_AD {
     width: 50%;
   }
-  
+
   .Button_Apply {
     background-color: navy;
   }
-  
+
   /*---------Details Nobel Prize---------*/
   .Details_Nobel_Prize {
     margin-top: -2px;
     width: 100%;
-    border-left: 0px solid white;
+    border-right: 0px solid #01A6BA;
+    border: 0px solid #01A6BA;
+    align-items: center;
+    background: none;
+    box-shadow: none;
+    border-radius: 0px
   }
+
   .Details_Nobel_Prize p {
     padding: 5%;
     font-size: 18px;
-  
-   
-  }
- 
-}
 
+
+  }
+
+}
